@@ -22,7 +22,7 @@ $(TARGET): $(OBJS)
 
 # Rule to clean the build files
 clean:
-	rm -f $(TARGET) $(OBJS)
+	rm -f $(TARGET) $(OBJS) image.ppm
 
 # Phony targets to avoid conflicts with files named 'all' or 'clean'
 .PHONY: all clean
