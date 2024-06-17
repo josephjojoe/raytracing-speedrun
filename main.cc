@@ -4,8 +4,6 @@
 #include "hittable_list.h"
 #include "sphere.h"
 
-
-
 int main() {
     hittable_list world;
 
@@ -16,6 +14,7 @@ int main() {
 
     cam.aspect_ratio = 16.0 / 9.0;
     cam.image_width  = 400;
+    cam.samples_per_pixel = 100;
 
     cam.render(world);
 }
